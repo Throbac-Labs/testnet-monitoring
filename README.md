@@ -6,7 +6,7 @@ docker-compose:
 - replace "external-network"
 
 prometheus.yml:
-- replace remote-write
+- replace "remote-write"
 - replace "container-name"
 - replace "container-port"
 
