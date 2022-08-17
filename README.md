@@ -11,8 +11,8 @@ prometheus.yml:
 - replace "container-port"
 
 promtail.yml
-- replace promtail-url
-- replace docker-target
+- replace "promtail-url"
+- replace "docker-target"
 
 # start up
 
