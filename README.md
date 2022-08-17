@@ -1,4 +1,15 @@
 # Monitoring
 
-Edit prometheus.yml -- add container you wish to monitor & remote write info
-Make sure containers are on same network as the one you wish to monitor
+Changes:
+
+docker-compose:
+- replace "<external-network>"
+
+prometheus.yml:
+- replace remote-write
+- replace "<container-name>"
+- replace "<container-port>"
+
+promtail.yml
+- replace <promtail-url>
+- replace <docker-target>
