@@ -7,9 +7,9 @@ docker-compose:
 
 prometheus.yml:
 - replace remote-write
-- replace "<container-name>"
-- replace "<container-port>"
+- replace "container-name"
+- replace "container-port"
 
 promtail.yml
-- replace <promtail-url>
-- replace <docker-target>
+- replace promtail-url
+- replace docker-target
