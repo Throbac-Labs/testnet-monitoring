@@ -3,7 +3,7 @@
 Changes:
 
 docker-compose:
-- replace "<external-network>"
+- replace "external-network"
 
 prometheus.yml:
 - replace remote-write
