@@ -1,3 +1,4 @@
+version: '3.8'
 services:
   mon_prometheus:
     image: prom/prometheus:latest
@@ -9,7 +10,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus:/prometheus
+      - prometheus_data:/prometheus
     command: 
       - '--config.file=/etc/prometheus/prometheus.yml'
     depends_on:
@@ -81,4 +82,4 @@ networks:
     external: true
 
 volumes:
-  prometheus:
+  prometheus_data:
